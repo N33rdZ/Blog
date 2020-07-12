@@ -1,7 +1,7 @@
 # Site
 name: "N33rdZ"
 title: "N33rdZ"
-description: "A CTF Team."
+description: "N33rdZ"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: /Blog
