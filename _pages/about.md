@@ -1,13 +1,13 @@
 ---
 layout: page
-title: A CTF Team.
+title: Challenging the status quo and seeing how far we can go.
 permalink: /about
 comments: false
 image: assets/images/WUNQ90i.jpeg
 imageshadow: true
 ---
 
-Contact us:
+<h2>Contact us:</h2>
 
 
 <a target="_blank" href="https://www.linkedin.com/in/yasser-ali-264884143/" class="btn btn-dark"> Yasser Ali &rarr;</a> <a target="_blank" href="https://www.linkedin.com/in/alyagomaa/" class="btn btn-dark"> Alya Gomaa &rarr;</a>
