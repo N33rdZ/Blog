@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title:  "FibSocket (Cybertalents Egypt FInals 2019)"
