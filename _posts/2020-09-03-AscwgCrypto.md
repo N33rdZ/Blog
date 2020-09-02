@@ -8,7 +8,7 @@ image: https://user-images.githubusercontent.com/25514920/92043491-6b4a9900-ed7c
 beforetoc: "Ascwg Crypto"
 toc: true
 ---
-# Challenge
+# Crypto Challenge with Number Theory
 
 we are given python file which contains this code:
 
