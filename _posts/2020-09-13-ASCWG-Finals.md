@@ -50,7 +50,7 @@ now i know that the `Payload offset` is `4096` so using `dd`
 
 ![image](https://user-images.githubusercontent.com/25514920/93020989-a6e92c80-f5e0-11ea-8f63-66f3047ed888.png)
 
-I used hashcat on my Teammate [Mahmoud Anas](https://www.facebook.com/vampo.rix) to crack the hash and we got the password `xavier`
+I used hashcat on my Teammate [Mahmoud Anas](https://www.facebook.com/vampo.rix) laptop to crack the hash and we got the password `xavier`
 
 so i mounted the `Luks` (which take me like 15 min to mount it becasue u never do what u know in ctfs :) )
 file and got the flag:
