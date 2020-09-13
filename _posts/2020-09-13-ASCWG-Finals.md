@@ -165,7 +165,7 @@ e = 65537
 c = 3761829741272145283141558702847898018685351301385367354966819695378446980283150871815816812877
 ```
 
-after doing some tests on `n` to factor it i got knew that it has multifactors so i used
+after doing some tests on `n` to factor it i knew that it has multifactors so i used
 [primefact](https://github.com/elliptic-shiho/primefac-fork)
 
 to get `n` factors to get `phi` to get `d`
