@@ -73,7 +73,7 @@ I know that their is command in linux called `convert` which can merge images ho
 so all i need to do is merging all the images which has the same `y` coordinate horizntally 
 and then merge them all vertically but this caused error since the images are not ordered
 
-so after like (30 min of bad scripts becasue i am a Competitve programmer so i always was thinking about efficiency XD)
+so after like (30 min of bad scripts becasue i am a Competitve programmer so i always think about efficiency XD)
 
 i started to think in another way (since it's 900 points challenge XD)
 
