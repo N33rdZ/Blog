@@ -170,7 +170,7 @@ after doing some tests on `n` to factor it i knew that it has multifactors so i 
 
 to get `n` factors to get `phi` to get `d`
 
-and xored `c` with `a`
+and xored `c` with `d`
 
 ```python
 from Crypto.Util.number import long_to_bytes, inverse
