@@ -37,7 +37,7 @@ I got `RAR` file contians `challenge.img` file
 using `file` command i knew that it's a `LUKS` file 
 ![image](https://user-images.githubusercontent.com/25514920/93020455-7227a600-f5dd-11ea-8654-4fba963a0a05.png)
 
-I don't have enough background about it so i readed this [wiki](https://en.wikipedia.org/wiki/Linux_Unified_Key_Setup) and this [article](https://willhaley.com/blog/encrypted-file-container-disk-image-in-linux/)
+I don't have enough background about it so i read this [wiki](https://en.wikipedia.org/wiki/Linux_Unified_Key_Setup) and this [article](https://willhaley.com/blog/encrypted-file-container-disk-image-in-linux/)
 
 when i tried to mount the file i got that i need to get password :
 
