@@ -1,6 +1,16 @@
 ---
-published: false
+published: true
+layout: post
+title: ASCWG
+author: Neroli
+categories:
+  - Crypto
+image: >-
+  https://user-images.githubusercontent.com/25514920/93023802-e79d7180-f5f1-11ea-9e72-b835798a364b.png
+beforetoc: Ascwg Crypto
+toc: true
 ---
+
 # Arab Security CyberWargames Finals 2020
 
 ## Forensics
