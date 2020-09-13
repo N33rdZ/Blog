@@ -1,11 +1,13 @@
 ---
-published: True
+published: true
 layout: post
-title:  "ASCWG"
+title: ASCWG
 author: Neroli
-categories: [ Crypto ]
-image: https://user-images.githubusercontent.com/25514920/92043491-6b4a9900-ed7c-11ea-9342-50069438d4f1.png
-beforetoc: "Ascwg Crypto"
+categories:
+  - Crypto
+image: >-
+  https://user-images.githubusercontent.com/25514920/92043491-6b4a9900-ed7c-11ea-9342-50069438d4f1.png
+beforetoc: Ascwg Crypto
 toc: true
 ---
 # Crypto Challenge with Number Theory
