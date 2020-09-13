@@ -433,5 +433,5 @@ for s in brute(length=3):
 ```ASCWG{y0u_N33d_t0_Brut3_F0rce_th3_k3y}```
 
 
-I hope that i didn't forgot any challenge it was fun and i want to thank my team for making is make in  top 3 :).
+I hope that i didn't forgot any challenge it was fun and i want to thank my team to be in top 3 :).
 
