@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-title: ASCWG
+title: ASCWG Finals Writeups
 author: Neroli
 categories:
   - Crypto
