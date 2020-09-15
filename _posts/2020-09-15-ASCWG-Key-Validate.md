@@ -4,7 +4,7 @@ layout: post
 title:  "ASCWG Key Validate"
 author: Alya
 categories: Reverse
-image: https://www.facebook.com/ascyberwargames/photos/a.1898657743777689/2542820442694746/
+image: https://scontent.fcai21-2.fna.fbcdn.net/v/t1.0-0/p370x247/110313248_2542820449361412_4064549934332186149_n.jpg?_nc_cat=106&_nc_sid=85a577&_nc_ohc=icbySXGLhHUAX8Yk8JT&_nc_ht=scontent.fcai21-2.fna&tp=6&oh=92bee7b4c2f75c2cd82577fe3a365e17&oe=5F877956
 beforetoc: "ASCWG CTF Writeups (2020)"
 toc: true
 ---
