@@ -14,7 +14,7 @@ Download the binary [here](https://filebin.net/8izcu5w48xia6rk2)
 
 At first the binary does some weird computations which turned out to be the stored hashes
 
-Then, We're asked to enter an 8 character long key
+Then, We're asked to enter a 40 character long key
 
 ![](https://raw.githubusercontent.com/N33rdZ/Blog/gh-pages/_posts/images/Key-Validate/input.png)
 
