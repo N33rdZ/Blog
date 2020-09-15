@@ -2,7 +2,7 @@
 published: True
 layout: post
 title:  "ASCWG Key Validate"
-author: coreflood
+author: Alya
 categories: Reverse
 image: https://https://www.facebook.com/ascyberwargames/photos/a.1898657743777689/2542820442694746/
 beforetoc: "ASCWG CTF Writeups (2020)"
