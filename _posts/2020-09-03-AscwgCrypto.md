@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-title: ASCWG
+title: "ASCWG Crypto - Qualifications Writeups" 
 author: Neroli
 categories:
   - Crypto
