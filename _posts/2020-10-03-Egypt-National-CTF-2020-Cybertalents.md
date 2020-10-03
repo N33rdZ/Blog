@@ -1,10 +1,12 @@
 ---
+published: True
 layout: post
 title:  "Cybertalents Egypt Finals 2020"
 author: FlEx
 categories: Web
 image: https://raw.githubusercontent.com/N33rdZ/Blog/gh-pages/_posts/images/Key-Validate/bg-cy-ctf.jpg
 beforetoc: "Egypt National CTF 2020 Cybertalents Writeup"
+toc: true
 ---
 
 # Web Challenges
