@@ -40,15 +40,15 @@ authors:
     web: https://neroli-realy.github.io/
     Linkedin: https://www.linkedin.com/in/yasser-ali-264884143/
     description: "Software Developer and penetration tester, I love CTf's and Problem solving and doing bughunting in free time."
-  Flex:
-    name: Flex
-    display_name: Flex   
-    avatar: 'assets/images/avatar.png'
+  FlEx:
+    name: Mohamed sayed
+    display_name: Mohamed Sayed (FlEx)  
+    avatar: 'assets/images/flex.jpg'
     gravatar: b1cc14991db7a456fcd761680bbc8f81
-    email: wowthemesnet@gmail.com
-    web: https://www.wowthemes.net
-    twitter: https://twitter.com/wowthemesnet
-    description: "This is the author box. Write a short description of the author here. You are currently previewing Mediumish demo, a Jekyll template compatible with Github pages."
+    email: syd9363@gmail.com
+    web: https://www.linkedin.com/in/flex0geek/
+    twitter: https://twitter.com/flex0geek
+    description: "Cyber Security Consultant @ CyShield, Bug Hunter @ H1 & BugCrowd, CTF Player, Anime Lover"
 
 # Plugins
 plugins:
