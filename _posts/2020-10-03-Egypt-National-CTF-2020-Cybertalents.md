@@ -9,11 +9,10 @@ toc: true
 
 ## Web Challenges
 
-### Name:
-Cooki3 Sl4yer
-### Level:
+### Cooki3 Sl4yer
+## Level:
 Easy
-### Points: 
+## Points: 
 50
 
 The servers is down so I can't show screenshots but I will share the idea of the challenge, the name of challenge show that we will play with the cookies
@@ -42,11 +41,10 @@ I encoded it to base64 and added it to the cookies and  I got my flag 😎.
 
 
 
-### Name:
-Icoan
-### Level:
+### Icoan
+## Level:
 Medium
-### Points: 
+## Points: 
 100
 
 This challenge have same issue the server is down so I will share the idea of it, the challenge was including an upload function with a dropdown menu to select the format
