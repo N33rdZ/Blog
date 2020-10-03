@@ -4,6 +4,7 @@ title:  "Cybertalents Egypt Finals 2020"
 author: FlEx
 categories: Web
 image: https://raw.githubusercontent.com/N33rdZ/Blog/gh-pages/_posts/images/Key-Validate/bg-cy-ctf.jpg
+toc: true
 ---
 
 ## Web Challenges
