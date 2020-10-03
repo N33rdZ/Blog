@@ -4,16 +4,15 @@ title:  "Cybertalents Egypt Finals 2020"
 author: FlEx
 categories: Web
 image: https://raw.githubusercontent.com/N33rdZ/Blog/gh-pages/_posts/images/Key-Validate/bg-cy-ctf.jpg
+beforetoc: "Egypt National CTF 2020 Cybertalents Writeup"
 toc: true
 ---
 
-## Web Challenges
+# Web Challenges
 
-### Cooki3 Sl4yer
-## Level:
-Easy
-## Points: 
-50
+## Cooki3 Sl4yer
+### Level: Easy
+### Points: 50
 
 The servers is down so I can't show screenshots but I will share the idea of the challenge, the name of challenge show that we will play with the cookies
 I opened the source code after opening the challenge and found a comment with `guest/guest` user, I logged in with it and take a look on the cookies and I found these two values
@@ -41,11 +40,9 @@ I encoded it to base64 and added it to the cookies and  I got my flag 😎.
 
 
 
-### Icoan
-## Level:
-Medium
-## Points: 
-100
+## Icoan
+### Level:Medium
+### Points: 100
 
 This challenge have same issue the server is down so I will share the idea of it, the challenge was including an upload function with a dropdown menu to select the format
 of the uploaded file I tried a lot of payloads to upload a shell but I notice that the content-type of response is an image so there is two things first you should bypass it
