@@ -1,5 +1,12 @@
 ---
-published: false
+published: True
+layout: post
+title:  "Cybertalents Egypt Finals 2020"
+author: Neroli
+categories: Forensics, Web, ReverseEngineering
+image: https://raw.githubusercontent.com/N33rdZ/Blog/gh-pages/_posts/images/Key-Validate/bg-cy-ctf.jpg
+beforetoc: "Arab Regionals 2020 Savetheworld challenge Writeup"
+toc: true
 ---
 # Memory Forensics
 First of all we got Memory dump file called `it5_not_this_easy.mem` 
