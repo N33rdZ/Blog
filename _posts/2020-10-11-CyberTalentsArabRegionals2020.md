@@ -8,7 +8,10 @@ image: https://website-cybertalents.s3-us-west-2.amazonaws.com/Competitions/Thum
 beforetoc: "Arab Regionals 2020 Savetheworld challenge Writeup"
 toc: true
 ---
-
+# Name: Save the World
+## Points: 200
+## Level: Hard
+## Solved: 0
 
 # Memory Forensics
 First of all we got Memory dump file called `it5_not_this_easy.mem` 
