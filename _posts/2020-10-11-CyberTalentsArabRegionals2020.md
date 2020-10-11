@@ -4,7 +4,7 @@ layout: post
 title:  "Cybertalents Egypt Finals 2020"
 author: Neroli
 categories: Forensics, Web, ReverseEngineering
-image: https://raw.githubusercontent.com/N33rdZ/Blog/gh-pages/_posts/images/Key-Validate/bg-cy-ctf.jpg
+image: https://website-cybertalents.s3-us-west-2.amazonaws.com/Competitions/Thumbnail+-+Arab+and+Africa+CTF.jpg
 beforetoc: "Arab Regionals 2020 Savetheworld challenge Writeup"
 toc: true
 ---
