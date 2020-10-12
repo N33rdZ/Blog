@@ -229,7 +229,7 @@ getting the dbs:
 
 I know already from the db file that we need to go for the `backup` table in `mal_w` db
 
-I got alot of records and all of them was not readable and seemed encrypted 
+I got a lot of records and all of them was not readable and seemed encrypted 
 ![](https://user-images.githubusercontent.com/25514920/95691427-7916f800-0c1f-11eb-84ed-75426cb30522.png)
 
 mm.. let's see again what we have:
@@ -554,25 +554,35 @@ LABEL_35:
 ```
 
 
-it was doing these steps:
-* get the username `admin` and reverse It `nimda` 
+it encrypts the Keys and IDs by doing these steps:
+
+To encrypt the IDs:
+* get the username `admin` and reverse It `nimda` and use it as the key to encrypt all the IDs
 * find each character position in a saved text let's call it `alphabet` = `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789{}_@` and add it to the list called `key_indices`
-
 * do the same for the `ID` which was written in `READMEEE.TXE` file and save it as `id_indices`
-* then add each index in in `id_indices` to the corresponding index in `key_indices` to get the encrypted character `alphabet[sum]`. 
+* then add each index in in `id_indices` to the corresponding index in `key_indices` to get the encrypted character `alphabet[sum]`
 
-* decrypt the values that we got from the db  with the key `this_is_Admin_P@55` by doing all of the above.
+To Decrypt the KEYS:
+* do the above steps buts this time with the key `this_is_Admin_P@55` instead of the key `admin` .
 
-so now let's decrypt/reverse it:
+
+so now let's reverse the encryption function:
+
 let `x` be our n'th char in `ID` and `y` our n'th char in `admin` and `c` the corresponding encrypted char, so:
 `c = alphabet[(alpabet.index(x) + alphabet.index(y)) % len(alphabet)]`
 then:
 `x = alphabet[alphabet.index(c) - alphabet.index(y)]`
 
-now to find the right record we can brute force to decrypt all of them or get the ID from the `notepad.exe` process we got 4 ID's:
+now to find the right record (the one that has the flag) we can do one of the following :
+* encrypt all the IDs we got from the database
+* or since the ransomware was in the admin machine, the correct IDs must be there. so we get the IDs by dumping the `notepad.exe` process.
+
+Doing the second one we got 4 IDs:
 ![](https://user-images.githubusercontent.com/25514920/95692510-91d6dc00-0c26-11eb-8dd0-13961c4e8688.png)
 
-encrypted all of them with:
+
+Since the database stores the IDs encrypted i first encrypted the 4 IDs using the key `'admin'` in order to look for the encrypted values in the database:
+
 ```python
 alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789{}_@"
 def get_idx(string):
@@ -603,7 +613,12 @@ uW1_Y3FoMY{W9EYxOBkYEkauYS2c5
 XbAcYBYtWYKuGtYjbX2Y@ea3Ytu_f
 JWBiYGiO6YF@LQYuawXYlM_rY}AB_
 ```
-the only one I found that gave me the `KEY` in the db was the last one :
+
+Then i searched for them in the database. 
+![](https://user-images.githubusercontent.com/25514920/95691427-7916f800-0c1f-11eb-84ed-75426cb30522.png)
+
+
+the only encrypted ID I found in the db was the last one `JWBiYGiO6YF@LQYuawXYlM_rY}AB_`. it gave me the following encrypted Key:
 `Wc3v8HNQbikTUqMJEx3knNu1LIbh_V}{JIyrjflt5GCLY_wSO{HIu_3Vmym}f`
 
 so I decrypted it:
