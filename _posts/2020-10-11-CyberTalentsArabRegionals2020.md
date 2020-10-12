@@ -555,14 +555,15 @@ LABEL_35:
 
 
 it was doing these steps:
-* get the username `admin` and reverse It `nimda`
-* find each character position in saved text let's call it `alphabet` = `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789{}_@` and save it, we renamed it as `key_indices`
+* get the username `admin` and reverse It `nimda` 
+* find each character position in a saved text let's call it `alphabet` = `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789{}_@` and add it to the list called `key_indices`
 
 * do the same for the `ID` which was written in `READMEEE.TXE` file and save it as `id_indices`
-* then add each character location in `ID` to the corresponding character location in `nidma` and get `alphabet[sum]` and return the result text
-* doing all of the above with the Values (that we got from the db) with the admin password `this_is_Admin_P@55`
+* then add each index in in `id_indices` to the corresponding index in `key_indices` to get the encrypted character `alphabet[sum]`. 
 
-so now let's decrypt it:
+* decrypt the values that we got from the db  with the key `this_is_Admin_P@55` by doing all of the above.
+
+so now let's decrypt/reverse it:
 let `x` be our n'th char in `ID` and `y` our n'th char in `admin` and `c` the corresponding encrypted char, so:
 `c = alphabet[(alpabet.index(x) + alphabet.index(y)) % len(alphabet)]`
 then:
@@ -602,7 +603,7 @@ uW1_Y3FoMY{W9EYxOBkYEkauYS2c5
 XbAcYBYtWYKuGtYjbX2Y@ea3Ytu_f
 JWBiYGiO6YF@LQYuawXYlM_rY}AB_
 ```
-the only one I found in the db was the last one which gave me the `KEY`:
+the only one I found that gave me the `KEY` in the db was the last one :
 `Wc3v8HNQbikTUqMJEx3knNu1LIbh_V}{JIyrjflt5GCLY_wSO{HIu_3Vmym}f`
 
 so I decrypted it:
