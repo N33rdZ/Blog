@@ -563,7 +563,7 @@ To encrypt the IDs:
 * then add each index in in `id_indices` to the corresponding index in `key_indices` to get the encrypted character `alphabet[sum]`
 
 To Decrypt the KEYS:
-* do the above steps buts this time with the key `this_is_Admin_P@55` instead of the key `admin` .
+* do the above steps but this time with the key `this_is_Admin_P@55` instead of the key `admin` .
 
 
 so now let's reverse the encryption function:
