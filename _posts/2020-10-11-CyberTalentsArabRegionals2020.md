@@ -574,8 +574,8 @@ then:
 `x = alphabet[alphabet.index(c) - alphabet.index(y)]`
 
 now to find the right record (the one that has the flag) we can do one of the following :
-* encrypt all the IDs we got from the database
-* or since the ransomware was in the admin machine, the correct IDs must be there. so we get the IDs by dumping the `notepad.exe` process.
+* decrypt all the keys we got from the database
+* or since the ransomware was in the admin machine, the correct IDs must be there. so we get the ID by dumping the `notepad.exe` process.
 
 Doing the second one we got 4 IDs:
 ![](https://user-images.githubusercontent.com/25514920/95692510-91d6dc00-0c26-11eb-8dd0-13961c4e8688.png)
