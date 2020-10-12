@@ -386,7 +386,7 @@ which was `74`
 and our output was:
 `good job ,let the challenge start now , this password is you way to complete version >> 'i_ne3d_tHe_vol_meMory' << good luck`
 
-and the program was still crashing so using `i_ne3d_tHe_vol_meMory` as a password for the rar file gaved us the fixed malware
+and the program was still crashing so using `i_ne3d_tHe_vol_meMory` as a password for the rar file gave us the fixed malware
 
 
 ![](https://user-images.githubusercontent.com/25514920/95691620-a4e6ad80-0c20-11eb-8dc4-abc9bf927a4c.png)
@@ -602,7 +602,7 @@ uW1_Y3FoMY{W9EYxOBkYEkauYS2c5
 XbAcYBYtWYKuGtYjbX2Y@ea3Ytu_f
 JWBiYGiO6YF@LQYuawXYlM_rY}AB_
 ```
-the only one I found in the db was the last one which gaved me the `KEY`:
+the only one I found in the db was the last one which gave me the `KEY`:
 `Wc3v8HNQbikTUqMJEx3knNu1LIbh_V}{JIyrjflt5GCLY_wSO{HIu_3Vmym}f`
 
 so I decrypted it:
