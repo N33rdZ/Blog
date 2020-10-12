@@ -140,7 +140,7 @@ ing the same fun now , this may be kind of hint
 having in mind that the flag description was talking about memes so it seems that 
 `worm.exe` , `malware.exe` , `ransomware.exe`, `trajon.exe` are fake malwares 
 
-so our target is `svshosts.exe` since it's similar to [scvhosts](https://en.wikipedia.org/wiki/Svchost.exe)
+so our target is `svshosts.exe` since it's similar to [svchost](https://en.wikipedia.org/wiki/Svchost.exe)
 and also we now know that our path is `C:\Users\labib\Desktop\save_the_worled\`
 so let's get the files list in this location
 ![](https://user-images.githubusercontent.com/25514920/95689453-2afaf800-0c11-11eb-976a-beba1eb0e8d8.png)
