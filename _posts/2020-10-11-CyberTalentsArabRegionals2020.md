@@ -23,7 +23,7 @@ Running volatility on it to get the available profile:
 
 as we can see we got `Win7SP0x64` profile 
 
-first thing got into my mind is find the process list
+first thing that got into my mind is to find the process list
 ```
 [neroli@neroli-pc solve]$ volatility -f it5_not_this_easy.mem --profile=Win7SP0x64 pslist
 Volatility Foundation Volatility Framework 2.6.1
@@ -48,7 +48,8 @@ Offset(V)          Name                    PID   PPID   Thds     Hnds   Sess  Wo
 [neroli@neroli-pc solve]$ 
 
 ```
-There is many interesting processes, so let's get what it's print 
+
+There are many interesting processes, so let's get what is printed
 
 ```
 [neroli@neroli-pc solve]$ volatility -f it5_not_this_easy.mem --profile=Win7SP0x64 consoles
@@ -144,11 +145,11 @@ and also we now know that our path is `C:\Users\labib\Desktop\save_the_worled\`
 so let's get the files list in this location
 ![](https://user-images.githubusercontent.com/25514920/95689453-2afaf800-0c11-11eb-976a-beba1eb0e8d8.png)
 
-we can see that there is rar file called `step2.rar` which was protected with password
+we can see that there is a rar file called `step2.rar` which was protected with password
 ![](https://user-images.githubusercontent.com/25514920/95689558-dad06580-0c11-11eb-91c6-fccf11f2c317.png)
 
 now let's work with `svshosts.exe`
-First thing i thought since it's a Forensics challenge so we don't need to reverse the malware so i started with dumping the memory to find encryption key or something which maybe the rar password so running `memdump`
+First thing i thought since it's a Forensics challenge we don't need to reverse the malware so i started with dumping the memory to find the encryption key or something which maybe the rar password so running `memdump`
 
 `volatility -f it5_not_this_easy.mem --profile=Win7SP0x64 memdump -p 3496 -D .`
 
@@ -206,10 +207,10 @@ when i opened the webserver I got `nginx` welcome page
 moving to the endpoint we got a login page 
 ![](https://user-images.githubusercontent.com/25514920/95690413-e6bf2600-0c17-11eb-987e-9b304869aa15.png)
 
-entering the credentials that we got gaved me admin panel page 
+entering the credentials that we got gave me admin panel page 
 ![](https://user-images.githubusercontent.com/25514920/95690441-1bcb7880-0c18-11eb-95e3-ccb4c8e0d582.png)
 
-entering the key and id that we got didn't helped 
+entering the key and id that we got didn't help
 ![](https://user-images.githubusercontent.com/25514920/95690466-5df4ba00-0c18-11eb-82d6-de11e08f4a25.png)
 
 after trying to find sqli in this page i got nothing 
@@ -217,7 +218,7 @@ after trying to find sqli in this page i got nothing
 but trying it on the login page using sqlmap i got a blind sqli 
 ![](https://user-images.githubusercontent.com/25514920/95690574-16226280-0c19-11eb-8550-e9cb0db9c3b9.png)
 
-but the web server was going down after every 3 mins so and here i gaved up in the competition and they had released the full db file in the last 30 min but i was solving another challenge XD
+but the web server was going down every 3 mins so i gave up in the competition and they had released the full db file in the last 30 min but i was solving another challenge XD
 
 now let's get back to work 
 
@@ -239,11 +240,11 @@ mm.. let's see again what we have:
 # Reverse Engineering
 now let's get back to the malware `svshosts.exe`
 
-Running it was asking for number and if we entered any number it outputs dump data and crash
+Running it was asking for a number and if we entered any number it outputs garbage data and crashes
 ![](https://user-images.githubusercontent.com/25514920/95691415-4ff66780-0c1f-11eb-90ab-a5d9b8401dea.png)
 
-reversing the number function gaved us this code:
-``` C
+reversing the number function gave us this code:
+```C
 int *__fastcall sub_125530(void *Src, int a2)
 {
   char magic_number; // bl
@@ -360,6 +361,7 @@ int *__fastcall sub_125530(void *Src, int a2)
   while ( j < 0x7C );
   return v3;
 }
+
 ```
 
 all what it was doing is using our number as a key to xor an array of bytes:
@@ -389,11 +391,11 @@ and the program was still crashing so using `i_ne3d_tHe_vol_meMory` as a passwor
 
 ![](https://user-images.githubusercontent.com/25514920/95691620-a4e6ad80-0c20-11eb-8dc4-abc9bf927a4c.png)
 
-now let's reverse it, to be honest the strings parted helped me alot since I know now what I need 
+now let's reverse it, to be honest the strings part helped me alot since I know now what I need 
 
-so I searched for the function which encrypt data becasause our idin the readme file was not the same as the one in the httprequest above 
-after some diging me and my team mate [alya](https://www.linkedin.com/in/alyagomaa/) found the encryption function at address `0x125310`:
-``` C
+so I searched for the function which encrypts the data because our id in the readme file was not the same as the one in the httprequest above 
+after some digging me and my team mate [alya](https://www.linkedin.com/in/alyagomaa/) found the encryption function at address `0x125310`:
+```C
 DWORD *_cdecl takes_our_id(void *Memory, int a2, int a3, int a4, int a5, int a6, void *admin, int a8, int a9, int a10, int sabet, int a12)
 {
   _DWORD *v12; // ecx
@@ -552,21 +554,21 @@ LABEL_35:
 ```
 
 
-Simple what it was doing these steps:
+it was doing these steps:
 * get the username `admin` and reverse It `nimda`
-* find each character position in saved text let's call it `alphabet` = `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789{}_@` and save it we renamed it as `key_indices`
+* find each character position in saved text let's call it `alphabet` = `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789{}_@` and save it, we renamed it as `key_indices`
 
-* do the same for the `ID` which was written in `READMEEE.TXE` file and save it `id_indices`
-* then adding each character location in `ID` with the corresponding character location in `nidma` and get `alphabet[sum]` and return the result text
-* doing all of the above steps with the Values (that we got from the db) with the admin password `this_is_Admin_P@55`
+* do the same for the `ID` which was written in `READMEEE.TXE` file and save it as `id_indices`
+* then add each character location in `ID` to the corresponding character location in `nidma` and get `alphabet[sum]` and return the result text
+* doing all of the above with the Values (that we got from the db) with the admin password `this_is_Admin_P@55`
 
 so now let's decrypt it:
-let `x` our n'th char in `ID` and `y` is our n'th char in `admin` and `c` is the corresponding encrypted char, so:
+let `x` be our n'th char in `ID` and `y` our n'th char in `admin` and `c` the corresponding encrypted char, so:
 `c = alphabet[(alpabet.index(x) + alphabet.index(y)) % len(alphabet)]`
 then:
 `x = alphabet[alphabet.index(c) - alphabet.index(y)]`
 
-now to find the right record we can brute force to decrypt all of them or getting the ID from the `notepad.exe` process we got 4 ID's:
+now to find the right record we can brute force to decrypt all of them or get the ID from the `notepad.exe` process we got 4 ID's:
 ![](https://user-images.githubusercontent.com/25514920/95692510-91d6dc00-0c26-11eb-8dd0-13961c4e8688.png)
 
 encrypted all of them with:
@@ -600,7 +602,7 @@ uW1_Y3FoMY{W9EYxOBkYEkauYS2c5
 XbAcYBYtWYKuGtYjbX2Y@ea3Ytu_f
 JWBiYGiO6YF@LQYuawXYlM_rY}AB_
 ```
-the only one which I found in the db was the last one which gaved me the `KEY`:
+the only one I found in the db was the last one which gaved me the `KEY`:
 `Wc3v8HNQbikTUqMJEx3knNu1LIbh_V}{JIyrjflt5GCLY_wSO{HIu_3Vmym}f`
 
 so I decrypted it:
@@ -628,9 +630,8 @@ decrypt('Wc3v8HNQbikTUqMJEx3knNu1LIbh_V}{JIyrjflt5GCLY_wSO{HIu_3Vmym}f', 'this_i
 output:
 `fl4g{its_imp0siplE_to_wOrk_hArd_foR_some7hin9_you_doNT_enjoY}`
 
-And that's it XD, It was fun to solve after the ctf but it's not a Forensics only challenge So it would better have more points or being parted into 3 parted each part gives us flag for different category 
+And that's it XD, It was fun to solve after the ctf but it's not a Forensics only challenge So it would better have more points or be parted into 3 parts each part gives us a flag for a different category 
 
-and also the webserver was going down alot but it was fun to solve
+and also the webserver was going down a lot but it was fun to solve
 
 I hope u all like it :)
-
