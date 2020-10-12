@@ -648,6 +648,6 @@ output:
 
 And that's it XD, It was fun to solve after the ctf but it's not a Forensics only challenge So it would better have more points or be parted into 3 parts each part gives us a flag for a different category 
 
-and also the webserver was going down a lot but it was fun to solve
+and also the webserver was going down a lot but it was fun to solve.
 
 I hope u all like it :)
