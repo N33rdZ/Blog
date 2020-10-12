@@ -3,7 +3,7 @@ published: True
 layout: post
 title:  "SaveTheWorld - Cybertalents ArabRegionals 2020"
 author: Neroli
-categories: Forensics, Web, ReverseEngineering
+categories: Forensics , Web , ReverseEngineering
 image: https://website-cybertalents.s3-us-west-2.amazonaws.com/Competitions/Thumbnail+-+Arab+and+Africa+CTF.jpg
 beforetoc: "Arab Regionals 2020 Savetheworld challenge Writeup"
 toc: true
