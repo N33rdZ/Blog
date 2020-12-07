@@ -54,7 +54,7 @@ let's write math:
 
 to solve this [Congruence](https://en.wikipedia.org/wiki/Modular_arithmetic#Congruence)
 and find the [modinv](https://www.geeksforgeeks.org/multiplicative-inverse-under-modulo-m/)
-we can use [fermat little theorem](https://www.geeksforgeeks.org/fermats-little-theorem/) but b and (10^200) are not [co-primes](https://en.wikipedia.org/wiki/Coprime_integers)
+we can use [fermat little theorem](https://www.geeksforgeeks.org/fermats-little-theorem/) but b and (2^200) are not [co-primes](https://en.wikipedia.org/wiki/Coprime_integers)
 
 so we need to find a way, so after factoring using [factordb](http://factordb.com/) p we got
 
